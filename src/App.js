@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Navbar from "./js/Navbar";
+import Filters from "./js/Filters";
+import TaskList from "./js/TaskList";
 import moment from 'moment';
 
 
@@ -57,6 +59,7 @@ class App extends React.Component {
                             <Filters projects={this.getProjects()}/>
                         </aside>
                         <main className="col-sm-8 col-12 below">
+                            <h1 id="filter-title">All</h1>
                             <TaskList tasks={this.state.tasks}/>
                             <button type="button" id="addButton" className="btn btn-dark fixed-right-bottom">+</button>
                         </main>
